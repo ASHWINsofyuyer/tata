@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+  <title>Order form</title>
+</head>
+
+<body>
+
+  <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/mzbbzveb" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+      <br><br>
+      <label for="email-address">Email Address</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+      <br><br>
+      <label for="department">OIL</label>
+      <select name="department" id="department" required="">
+        <option value="Select" selected="" disabled="">Select</option>
+        <option value="Front Desk">COCONUT OIL</option>
+        <option value="Customer Care">GROUNDNUT OIL</option>
+
+      </select>
+      <br><br>
+        <label for="department">LITRE COUNT</label>
+
+        <select name="department" id="department" required="">
+          <option value="Select" selected="" disabled="">Select</option>
+          <option value="Front Desk">1</option>
+          <option value="Customer Care">2</option>
+          <option value="Front Desk">3</option>
+          <option value="Customer Care">4</option>
+          <option value="Front Desk">5</option>
+          <option value="Customer Care">6</option>
+
+
+        </select>
+        <br><br>
+
+      <label for="message">DELIVERY ADDRESS</label>
+      <textarea rows="5" name="message" id="message" placeholde="your delivery time." required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+    </fieldset>
+    <input type="submit" value="Send Message">
+  </form>
+
+</body>
+
+</html>
